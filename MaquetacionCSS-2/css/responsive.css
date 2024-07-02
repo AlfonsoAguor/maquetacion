@@ -1,0 +1,120 @@
+@media (max-width:1250px) {
+    .wrap {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #banner {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .cards {
+        width: 17%;
+        margin: 1.45%;
+    }
+
+    .cards p {
+        width: 90%;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #articles {
+        width: 65%;
+    }
+
+    #articles articles {
+        width: 97%;
+    }
+
+    #footer .wrap > div {
+        width: 24%;
+    }
+
+    #footer #browsers img {
+        width: 14%;
+    }
+
+
+}
+
+@media (max-width:1080px) {
+    .cards .category {
+        font-size: 17px;
+    }
+
+    .cards .descriptiom {
+        font-size: 14px;
+    }
+
+    #articles {
+        width: 61%;
+    }
+}
+
+@media (max-width:970px) {
+    #articles {
+        width: 59%;
+    }
+
+    #footer .wrap > div{
+        width: 26%;
+        margin: 20px;
+    }
+
+    #footer h5 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:930px) {
+    #articles {
+        width: 65%;
+    }
+
+    #lateral {
+        width: 25%;
+    }
+
+    #lateral h3{
+        font-size: 25px;
+    }
+
+    #lateral input[type="text"] {
+        width: 78%;
+    }
+
+    .caja {
+        width: 95%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    #login input[type="email"],
+    #login input[type="password"] {
+        width: 65%;
+    }
+
+    #login #user,
+    #login #password {
+        margin-left: 24px;
+    }
+
+    #login input[type="submit"],
+    #login input[type="button"],
+    #login input[type="reset"],
+    #login button{
+        margin-bottom: 0px;
+    }
+
+    #login input[type="reset"]{
+        display: none;
+    }
+
+    #login a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
