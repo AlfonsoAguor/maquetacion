@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Menu -->
+      <nav id="nav-bar" class="nav-bar">
+        <div class="logo">
+          <i class="fa-brands fa-medium"></i>
+          <p>Topic</p>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a id="#home" data-target="#home" class="targt-menu">HOME</a></li>
+
+            <li><a id="#browser" data-target="#browser" class="targt-menu">BROWSER TOPICS</a></li>
+
+            <li><a id="#work" data-target="#work" class="targt-menu">HOW IT WORKS</a></li>
+
+            <li><a id="#contact" data-target="#contact" class="targt-menu">CONTACT</a></li>
+
+            <li><a id="#faqs" data-target="#faqs" class="targt-menu">FAQS</a></li>
+
+            <li class="li-dropdown">
+              <a href="#">PAGES</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="targt-menu">TOPICS LISTENG</a></li>
+                <li><a href="#" class="targt-menu">CONTACT FORM</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-responsive">
+          <ul>
+            <li>
+              <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <ul class="ul-menu-toogle">
+                <li><a href="#home">HOME</a></li>
+
+                <li><a href="#browser">BROWSER TOPICS</a></li>
+
+                <li><a href="#work">HOW IT WORKS</a></li>
+
+                <li><a href="#faqs">FAQS</a></li>
+
+                <li><a href="#contact">CONTACT</a></li>
+
+                <li class="li-dropdown">
+                  <a href="#">PAGES</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">TOPICS LISTENG</a></li>
+                    <li><a href="#">CONTACT FORM</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="user">
+          <a><img src="img/default.jpg" alt="avatar" /></a>
+        </div>
+      </nav>
+
+      <!-- Seccion cabecera -->
+      <section id="home target-section" class="hero">
+        <div class="info-hero">
+          <h1>Discover. Learn. Enjoy</h1>
+          <h6>plataform for creatives around the world</h6>
+        </div>
+        <form class="form-search">
+          <div class="input-container">
+            <input
+              type="search"
+              placeholder="Design, Code, Marketing, Finance ..."
+              aria-label="Search"
+            />
+            <button type="submit" class="form-control">Search</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Seccion tarjetas-->
+      <section class="back-lightblue"></section>
+      <section class="hero-cards">
+        <div class="hero-card hero-card-web">
+          <a href="">
+            <div class="title-web">
+              <h5>Web Design</h5>
+              <p>
+                When you search for free CSS templates, you will notice that
+                TemplateMo is one of the best websites.
+              </p>
+            </div>
+            <p class="pill-web">14</p>
+
+            <img
+              src="./img/topics/undraw_Remote_design_team_re_urdx.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="hero-card hero-card-finance">
+          <img src="./img/businesswoman-using-tablet-analysis.jpg" alt="" />
+          <div class="title-finance">
+            <h5>Finance</h5>
+            <p>
+              Topic Listing Template includes homepage, listing page, detail
+              page, and contact page. You can feel free to edit and adapt for
+              your CMS requirements.
+            </p>
+            <button type="submit" class="button-finance">Read more</button>
+          </div>
+          <p class="pill-finance">25</p>
+          <div class="redes-finance">
+            <div class="logos">
+              <span>Share: </span>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest"></i>
+            </div>
+            <span class="bookmark">
+              <i class="far fa-bookmark"></i>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion Browser-->
+      <section id="browser" class="browser target-section">
+        <div id="filter-cards" class="browse-menu">
+          <h2>Browser topics</h2>
+          <ul>
+            <li>
+              <button
+                onclick="filterCards('design')"
+                class="boton-browse active"
+              >
+                Design
+              </button>
+            </li>
+            <li>
+              <button onclick="filterCards('marketing')" class="boton-browse">
+                Marketing
+              </button>
+            </li>
+            <li>
+              <button onclick="filterCards('finance')" class="boton-browse">
+                Finance
+              </button>
+            </li>
+            <li>
+              <button onclick="filterCards('music')" class="boton-browse">
+                Music
+              </button>
+            </li>
+            <li>
+              <button onclick="filterCards('education')" class="boton-browse">
+                Education
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="cards" class="cards">
+          <!-- Tarjetas design -->
+          <div class="card design">
+            <a href="">
+              <div class="title-web">
+                <h5>Web Design</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">14</p>
+              <img
+                src="./img/topics/undraw_Remote_design_team_re_urdx.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="card design">
+            <a href="">
+              <div class="title-web">
+                <h5>Graphic</h5>
+                <p>Lorem Ipsum dolor sit amet consectetur</p>
+              </div>
+              <p class="pill">75</p>
+              <img
+                src="./img/topics/undraw_Redesign_feedback_re_jvm0.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="card design">
+            <a href="">
+              <div class="title-web">
+                <h5>Logo Design</h5>
+                <p>Lorem Ipsum dolor sit amet consectetur</p>
+              </div>
+              <p class="pill">100</p>
+              <img
+                src="./img/topics/colleagues-working-cozy-office-medium-shot.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <!-- Tarjetas marketing -->
+          <div class="card marketing">
+            <a href="">
+              <div class="title-web">
+                <h5>Advertising</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img src="./img/topics/undraw_online_ad_re_ol62.png" alt="" />
+            </a>
+          </div>
+
+          <div class="card marketing">
+            <a href="">
+              <div class="title-web">
+                <h5>Video Content</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">65</p>
+              <img src="./img/topics/undraw_Group_video_re_btu7.png" alt="" />
+            </a>
+          </div>
+
+          <div class="card marketing">
+            <a href="">
+              <div class="title-web">
+                <h5>Viral Tweet</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">50</p>
+              <img src="./img/topics/undraw_viral_tweet_gndb.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Tarjetas finance -->
+          <div class="card finance">
+            <a href="">
+              <div class="title-web">
+                <h5>Investment</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img src="./img/topics/undraw_Finance_re_gnv2.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Tarjetas music -->
+          <div class="card music">
+            <a href="">
+              <div class="title-web">
+                <h5>Podcast</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img src="./img/topics/undraw_Compose_music_re_wpiw.png" alt="" />
+            </a>
+          </div>
+
+          <div class="card music">
+            <a href="">
+              <div class="title-web">
+                <h5>Compoing Song</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img src="./img/topics/undraw_happy_music_g6wc.png" alt="" />
+            </a>
+          </div>
+
+          <div class="card music">
+            <a href="">
+              <div class="title-web">
+                <h5>Online Music</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img
+                src="./img/topics/undraw_Podcast_audience_re_4i5q.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <!-- Tarjetas education -->
+          <div class="card education">
+            <a href="">
+              <div class="title-web">
+                <h5>Podcast</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img src="./img/topics/undraw_Graduation_re_gthn.png" alt="" />
+            </a>
+          </div>
+
+          <div class="card education">
+            <a href="">
+              <div class="title-web">
+                <h5>Compoing Song</h5>
+                <p>Topic Listing Templete based on Bootstrap</p>
+              </div>
+              <p class="pill">30</p>
+              <img src="./img/topics/undraw_Educator_re_ju47.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion Work-->
+      <section id="work" class="work target-section">
+        <div class="content-work">
+          <div class="list-progres">
+            <div id="inner-bar" class="inner"></div>
+          </div>
+
+          <h2>How does it work?</h2>
+
+          <div class="works-info">
+            <li>
+              <div class="icon search-icon">
+                <i class="fa fa-search"></i>
+              </div>
+
+              <div class="info">
+                <h4>Search your favorite topic</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat voluptas sapiente magni vero non nihil esse,
+                  cupiditate commodi pariatur ab officia numquam, vel quasi
+                  ipsam quibusdam recusandae quam reprehenderit. Ea!
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="icon bookmark-icon">
+                <i class="far fa-bookmark"></i>
+              </div>
+
+              <div class="info">
+                <h4>Bookmark & Keep it for yourself</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat voluptas sapiente magni vero non nihil esse,
+                  cupiditate commodi pariatur ab officia numquam, vel quasi
+                  ipsam quibusdam recusandae quam reprehenderit. Ea!
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="icon book-icon">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="info">
+                <h4>Bookmark & Keep it for yourself</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat voluptas sapiente magni vero non nihil esse,
+                  cupiditate commodi pariatur ab officia numquam, vel quasi
+                  ipsam quibusdam recusandae quam reprehenderit. Ea!
+                </p>
+              </div>
+            </li>
+          </div>
+
+          <div class="links">
+            <span>What to learn more?</span>
+            <button>Check our Youtube</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion FAQS-->
+      <section id="faqs" class="faqs target-section">
+        <div class="row">
+          <h2>Frequently Asked Questions</h2>
+          <img src="./img/faq_graphic.jpg" alt="" />
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-button">
+                What is Topic Listing?<i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Topic Listing is free Bootstrap 5 CSS template.
+                  <strong
+                    >You are not allowed to redistribute this template</strong
+                  >
+                  on any other template collection website without our
+                  permission. Please contact TemplateMo for more detail. Thank
+                  you.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button">
+                How to find a topic?<i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  You can search on Google with <strong>keywords</strong> such
+                  as templatemo portfolio, templatemo one-page layouts,
+                  photography, digital marketing, etc.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button">
+                Dows it need to paid?<i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  You can modify any of this with custom CSS or overriding our
+                  default variables. It's also worth noting that just about any
+                  HTML can go within the
+                  <span style="color: #d63384; font-size: 16px"
+                    >.accordion-body</span
+                  >, though the transition does limit overflow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion Location-->
+      <section id="contact" class="location target-section">
+        <h2>Get in touch</h2>
+        <div class="rows">
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.065641062665!2d-122.4230416990949!3d37.80335401520422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858127459fabad%3A0x808ba520e5e9edb7!2sFrancisco%20Park!5e1!3m2!1sen!2sth!4v1684340239744!5m2!1sen!2sth"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="office">
+            <h4>Head office</h4>
+            <p>Bay St &, Larkin St, San Francisco, CA 94109, United States</p>
+            <hr />
+            <p>PHONE <a href="tel: 305-240-9671">305-240-9671</a></p>
+            <p>EMAIL <a href="mailto:info@company.com">info@company.com</a></p>
+          </div>
+          <div class="office">
+            <h4>Dubai office</h4>
+            <p>Burj Park, Downtown Dubai, United Arab Emirates</p>
+            <hr />
+            <p>PHONE <a href="tel: 110-220-3400">110-220-3400</a></p>
+            <p>EMAIL <a href="mailto:info@company.com">info@company.com</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pie">
+        <div class="logo-pie">
+          <a href="#home">
+            <i class="fa-brands fa-medium"></i>
+            <p>Topic</p>
+          </a>
+        </div>
+        <div class="resource">
+          <h6>Resources</h6>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">How it works</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="information">
+          <h6>Information</h6>
+          <ul>
+            <li><a href="tel: 305-240-9671">305-240-9671</a></li>
+            <li><a href="mailto:info@company.com">info@company.com</a></li>
+          </ul>
+        </div>
+        <div class="design">
+          <p>Diseñada: <a href="https://templatemo.com">TemplateMo</a></p>
+          <p>
+            Desarollada:
+            <a href="https://alfonsoaguor.vercel.app/">AlfonsoAguor</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
